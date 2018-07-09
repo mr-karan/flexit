@@ -1,0 +1,17 @@
+// used for demo
+@import "grid";
+
+body {
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light","Helvetica Neue", Helvetica, Arial, "Lucida Grande",sans-serif;
+  }
+
+  .box-column {
+    min-height: 3rem;
+    background: #4040BF;
+    border: 1px solid #FFF;
+    border-radius: 2px;
+    text-align: center;
+    color: white;
+  }
