@@ -178,6 +178,14 @@ $breakpoint-desktop: 780px;
 	margin-top: $gutter;
 }
 
+.first {
+    order: -1;
+}
+
+.last {
+    order: 1;
+}
+
 /*
 	##Device = Low Resolution Tablets, Mobiles (Landscape)
 	##Screen = B/w $breakpoint-tablet to $breakpoint-desktop

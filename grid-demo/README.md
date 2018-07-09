@@ -1,6 +1,6 @@
 # grid-demo
 
-> Flexbox grid demo
+> Flexit grid demo
 
 ## Build Setup
 
