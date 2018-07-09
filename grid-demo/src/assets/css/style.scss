@@ -4,14 +4,39 @@
 body {
     box-sizing: border-box;
     font-size: 14px;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light","Helvetica Neue", Helvetica, Arial, "Lucida Grande",sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   .box-column {
     min-height: 3rem;
-    background: #4040BF;
+    background: #34a6e2;
     border: 1px solid #FFF;
     border-radius: 2px;
     text-align: center;
     color: white;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  a {
+    color: #42b983;
+  }
+  .grid-header {
+    margin: 5rem 0;
   }

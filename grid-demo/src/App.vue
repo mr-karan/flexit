@@ -1,4 +1,9 @@
 <template>
+	<section>
+	<header class="grid-header text-center">
+		<h1>Flexit</h1>
+		<h2>Simple, clean and no fuss flexbox based grid</h2>
+	</header>
 	<div id="app" class="container">
 		<div class="row">
 			<div class="one columns">
@@ -52,6 +57,7 @@
 			</div>
 		</div>
 	</div>
+	</section>
 </template>
 
 <script>
@@ -64,32 +70,3 @@ export default {
 	}
 }
 </script>
-
-<style lang="scss">
-#app {
-	font-family: 'Avenir', Helvetica, Arial, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-align: center;
-	color: #2c3e50;
-	margin-top: 60px;
-}
-
-h1, h2 {
-	font-weight: normal;
-}
-
-ul {
-	list-style-type: none;
-	padding: 0;
-}
-
-li {
-	display: inline-block;
-	margin: 0 10px;
-}
-
-a {
-	color: #42b983;
-}
-</style>
