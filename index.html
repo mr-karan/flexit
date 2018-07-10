@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Flexit-Responsive CSS grid</title>
-    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="static/css/main.css">
     <link rel='shortcut icon' type='image/x-icon' href='static/images/favicon.ico' />
 </head>
@@ -27,49 +27,111 @@
         <main>
             <section class="row vertical">
                 <h1>Get started in no time</h1>
+                <p>With simple and human readable class names, you can get up and running with Flexbit in no time</p>
                 <!-- CODE EXAMPLE ———————————————————————————————————————— -->
-                <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="div-highlight">&lt;section</span> <span class="div-highlight">class=</span><span class="name-highlight">"section"</span><span class="div-highlight">&gt;</span>
-      <span class="div-highlight">&lt;div</span> <span class="class-highlight">class=</span><span class="name-highlight">"codiv-highlightainer"</span><span class="div-highlight">&gt;</span>
-        <span class="div-highlight">&lt;h1</span> <span class="class-highlight">class=</span><span class="name-highlight">"title"</span><span class="div-highlight">&gt;</span>Section<span class="div-highlight">&lt;/h1&gt;</span>
-        <span class="div-highlight">&lt;h2</span> <span class="class-highlight">class=</span><span class="name-highlight">"subtitle"</span><span class="div-highlight">&gt;</span>
-          A simple class <span class="div-highlight">&lt;strong&gt;</span>sections<span class="div-highlight">&lt;/strong&gt;</span>, like the one you're reading
-        <span class="div-highlight">&lt;/h2&gt;</span>
+                <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="div-highlight">&lt;section</span> <span class="div-highlight">class=</span><span class="name-highlight">"row"</span><span class="div-highlight">&gt;</span>
+      <span class="div-highlight">&lt;div</span> <span class="class-highlight">class=</span><span class="name-highlight">"one column"</span><span class="div-highlight">&gt;</span>
+        <span class="div-highlight">&lt;p</span><span class="div-highlight">&gt;</span>Section<span class="div-highlight">&lt;/p&gt;</span>
+      <span class="div-highlight">&lt;div</span> <span class="class-highlight">class=</span><span class="name-highlight">"five columns"</span><span class="div-highlight">&gt;</span>
+        <span class="div-highlight">&lt;p</span><span class="div-highlight">&gt;</span>Section<span class="div-highlight">&lt;/p&gt;</span>
+      <span class="div-highlight">&lt;div</span> <span class="class-highlight">class=</span><span class="name-highlight">"six columns"</span><span class="div-highlight">&gt;</span>
+        <span class="div-highlight">&lt;p</span><span class="div-highlight">&gt;</span>Section<span class="div-highlight">&lt;/p&gt;</span>
       <span class="div-highlight">&lt;/div&gt;</span>
 <span class="div-highlight">&lt;/section&gt;</span></code></pre></figure>
+<section>
+        <div class="row">
+            <div class="one columns">
+                <div class="box-column">
+                    <p>content</p>
+                </div>
+            </div>
+            <div class="five columns">
+                <div class="box-column">
+                    <p>content</p>
+                </div>
+            </div>
+            <div class="six columns">
+                <div class="box-column">
+                    <p>content</p>
+                </div>
+            </div>
+        </div>
+</section>
                 <!-- ————————————————————————————————————————————————————— -->
 
             </section>
-            <section class="row">
-                <h1>No hidden surprises</h1>
-            </section>
-            <section class="row">
+
+            <section class="row vertical">
                 <h1>Nested Grids</h1>
+                <section>
+                        <div class="row">
+                            <div class="box-first four columns">
+                                <div class="row">
+                                    <div class="columns">
+                                        <div class="box-column">
+                                                <p>content</p>
+                                        </div>
+                                    </div>
+                                    <div class="columns">
+                                            <div class="box-column">
+                                                    <p>content</p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-first eight columns">
+                                    <div class="row">
+                                        <div class="columns">
+                                            <div class="box-column">
+                                                    <p>content</p>
+                                            </div>
+                                        </div>
+                                        <div class="columns">
+                                                <div class="box-column">
+                                                        <p>content</p>
+                                                </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                </section>
             </section>
             <section class="row">
-                <h1>Add as many columns as you want</h1>
+                    <h1>No hidden surprises</h1>
+                    <p>The motive behind creating another flexbox grid is precisely this. Flexbit doesn't make any preassumptions and no hacky code.
+                        As a result, you take full control over how the columns and row will be aligned and can even control the spacing between them.
+                    </p>
             </section>
             <section class="row">
-                <h1>Flexbox based Alignment</h1>
+                <h1>Auto width Columns</h1>
+                <p>You can add as many columns as you want in a row. Don't specify any fixed size of the columns and the grid will
+                    fit these auto width columns based on the size available in the row.
+                </p>
             </section>
             <section class="row">
-                <h1>Order columns the way you want to</h1>
+                <h1>Flexbox Utilities</h1>
+                <p>Flexbit implements a set of useful utilities present in Flexbox as helper classes. You can make the use of them
+                    to accelerate your development
+                </p>
             </section>
         </main>
+
+
         <section>
             <div class="row">
                 <div class="one columns">
                     <div class="box-column">
-                        <p>one column</p>
+                        <p>one</p>
                     </div>
                 </div>
                 <div class="five columns">
                     <div class="box-column">
-                        <p>five columns</p>
+                        <p>five</p>
                     </div>
                 </div>
                 <div class="six columns">
                     <div class="box-column">
-                        <p>six columns</p>
+                        <p>six</p>
                     </div>
                 </div>
             </div>
@@ -93,17 +155,17 @@
             <div class="row">
                 <div class="six columns">
                     <div class="box-column">
-                        <p>six columns</p>
+                        <p>six</p>
                     </div>
                 </div>
                 <div class="four column">
                     <div class="box-column">
-                        <p>four columns</p>
+                        <p>four</p>
                     </div>
                 </div>
                 <div class="two column">
                     <div class="box-column">
-                        <p>two columns</p>
+                        <p>two</p>
                     </div>
                 </div>
             </div>

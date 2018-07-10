@@ -4,7 +4,7 @@
 body {
 	box-sizing: border-box;
 	font-size: 14px;
-	font-family: 'Dosis', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	letter-spacing: 0.07rem;
 	-moz-osx-font-smoothing: grayscale;
@@ -17,10 +17,18 @@ body {
 	border-radius: 2px;
 	text-align: center;
 	color: white;
+	p {
+		font-size: 0.875rem;
+		padding: 10px;
+	}
+  }
+  h1,h2,.sub-header {
+	font-family: 'Dosis', sans-serif;
   }
 
   h1 {
 	font-size: 3rem;
+	margin: 10px 0;
   }
   h2 {
 	font-size: 2rem;
@@ -41,7 +49,9 @@ body {
   .grid-header {
 	margin: 5rem 0;
   }
-
+  p {
+	  font-size: 1rem;
+  }
   pre {
 	-webkit-overflow-scrolling: touch;
 	background-color: whitesmoke;
@@ -88,4 +98,9 @@ body {
 
 .site-header {
 	margin: 3rem 0;
+}
+
+.box-first {
+    background: #223967;
+    border-color: #F4FAF0;
 }

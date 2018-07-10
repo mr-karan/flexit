@@ -208,7 +208,7 @@ email: karan.sharma@zerodha.com
 body {
   box-sizing: border-box;
   font-size: 14px;
-  font-family: "Dosis", sans-serif;
+  font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
   letter-spacing: 0.07rem;
   -moz-osx-font-smoothing: grayscale;
@@ -222,9 +222,18 @@ body {
   text-align: center;
   color: white;
 }
+.box-column p {
+  font-size: 0.875rem;
+  padding: 10px;
+}
+
+h1, h2, .sub-header {
+  font-family: "Dosis", sans-serif;
+}
 
 h1 {
   font-size: 3rem;
+  margin: 10px 0;
 }
 
 h2 {
@@ -247,6 +256,10 @@ a {
 
 .grid-header {
   margin: 5rem 0;
+}
+
+p {
+  font-size: 1rem;
 }
 
 pre {
@@ -295,6 +308,11 @@ pre code .class-highlight {
 
 .site-header {
   margin: 3rem 0;
+}
+
+.box-first {
+  background: #223967;
+  border-color: #F4FAF0;
 }
 
 /*# sourceMappingURL=static/css/main.css.map */
