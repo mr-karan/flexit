@@ -6,6 +6,9 @@ Flexit is a **lightweight CSS Grid** based on [Flexbox](https://www.w3.org/TR/cs
 [![npm](https://img.shields.io/npm/v/flexitgrid.svg)][npm-link]
 [![npm](https://img.shields.io/npm/dm/flexitgrid.svg)][npm-link]
 
+## Demo
+
+[Visit](https://mrkaran.com/flexit/) the demo page built entirely using Flexit.
 
 
 ## Quick install
@@ -56,10 +59,6 @@ have 2 columns occupying 50% of the grid and one column occupying the remaining 
     </div>
 </div>
 ```
-
-## Demo
-
-[Visit](https://mrkaran.com/flexit/) the demo page built entirely using Flexit.
 
 
 ## Copyright and license
