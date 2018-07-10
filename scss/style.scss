@@ -6,7 +6,6 @@ body {
 	font-size: 14px;
 	font-family: 'Raleway', sans-serif;
 	-webkit-font-smoothing: antialiased;
-	letter-spacing: 0.07rem;
 	-moz-osx-font-smoothing: grayscale;
     background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/clean_textile.png");
     background-attachment: fixed;
@@ -24,8 +23,9 @@ body {
 		padding: 10px;
 	}
   }
-  h1,h2,.sub-header {
+  h1,h2,h3,.sub-header {
 	font-family: 'Dosis', sans-serif;
+	letter-spacing: 0.07rem;
   }
 
   h1 {
@@ -113,4 +113,8 @@ body {
 
 main {
 	margin: 5rem 0;
+}
+
+.row-bg {
+	background-color: #223967;
 }

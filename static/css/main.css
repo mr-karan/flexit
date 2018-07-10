@@ -132,12 +132,48 @@ email: karan.sharma@zerodha.com
   justify-content: space-between;
 }
 
-.end {
-  justify-content: flex-end;
+.evenly {
+  justify-content: space-evenly;
 }
 
 .around {
   justify-content: space-around;
+}
+
+.center {
+  justify-content: center;
+}
+
+.start {
+  justify-content: flex-start;
+}
+
+.end {
+  justify-content: flex-end;
+}
+
+.top {
+  align-items: flex-start;
+}
+
+.bottom {
+  align-items: flex-end;
+}
+
+.middle {
+  align-items: center;
+}
+
+.first {
+  order: -1;
+}
+
+.last {
+  order: 1;
+}
+
+.vertical {
+  flex-flow: column wrap;
 }
 
 .text-center {
@@ -162,18 +198,6 @@ email: karan.sharma@zerodha.com
 
 .space-top {
   margin-top: 10px;
-}
-
-.first {
-  order: -1;
-}
-
-.last {
-  order: 1;
-}
-
-.vertical {
-  flex-flow: column wrap;
 }
 
 /*
@@ -210,7 +234,6 @@ body {
   font-size: 14px;
   font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
-  letter-spacing: 0.07rem;
   -moz-osx-font-smoothing: grayscale;
   background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/clean_textile.png");
   background-attachment: fixed;
@@ -229,8 +252,9 @@ body {
   padding: 10px;
 }
 
-h1, h2, .sub-header {
+h1, h2, h3, .sub-header {
   font-family: "Dosis", sans-serif;
+  letter-spacing: 0.07rem;
 }
 
 h1 {
@@ -323,6 +347,10 @@ pre code .class-highlight {
 
 main {
   margin: 5rem 0;
+}
+
+.row-bg {
+  background-color: #223967;
 }
 
 /*# sourceMappingURL=static/css/main.css.map */

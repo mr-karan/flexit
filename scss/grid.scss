@@ -146,16 +146,49 @@ $breakpoint-desktop: 780px;
 	justify-content: space-between;
 }
 
-.end {
-	justify-content: flex-end;
+.evenly {
+	justify-content: space-evenly;
 }
 
 .around {
 	justify-content: space-around;
 }
 
-.text-center {
+.center {
+	justify-content: center;
 	text-align: center;
+}
+
+.start {
+	justify-content: flex-start;
+}
+
+.end {
+	justify-content: flex-end;
+}
+
+.top {
+	align-items: flex-start;
+}
+
+.bottom {
+	align-items: flex-end;
+}
+
+.middle {
+	align-items: center;
+}
+
+.first {
+    order: -1;
+}
+
+.last {
+    order: 1;
+}
+
+.vertical {
+	flex-flow: column wrap;
 }
 
 .row-align-center {
@@ -178,17 +211,7 @@ $breakpoint-desktop: 780px;
 	margin-top: $gutter;
 }
 
-.first {
-    order: -1;
-}
 
-.last {
-    order: 1;
-}
-
-.vertical {
-	flex-flow: column wrap;
-}
 
 /*
 	##Device = Low Resolution Tablets, Mobiles (Landscape)
