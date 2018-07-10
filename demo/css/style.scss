@@ -4,14 +4,15 @@
 body {
     box-sizing: border-box;
     font-size: 14px;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Dosis', sans-serif;
     -webkit-font-smoothing: antialiased;
+    letter-spacing: 0.07rem;
     -moz-osx-font-smoothing: grayscale;
   }
 
   .box-column {
     min-height: 3rem;
-    background: #34a6e2;
+    background: #1238AB;
     border: 1px solid #FFF;
     border-radius: 2px;
     text-align: center;
