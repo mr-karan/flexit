@@ -2,78 +2,90 @@
 @import "grid";
 
 body {
-    box-sizing: border-box;
-    font-size: 14px;
-    font-family: 'Dosis', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    letter-spacing: 0.07rem;
-    -moz-osx-font-smoothing: grayscale;
+	box-sizing: border-box;
+	font-size: 14px;
+	font-family: 'Dosis', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	letter-spacing: 0.07rem;
+	-moz-osx-font-smoothing: grayscale;
   }
 
   .box-column {
-    min-height: 3rem;
-    background: #1238AB;
-    border: 1px solid #FFF;
-    border-radius: 2px;
-    text-align: center;
-    color: white;
+	min-height: 3rem;
+	background: #1238AB;
+	border: 1px solid #FFF;
+	border-radius: 2px;
+	text-align: center;
+	color: white;
   }
 
   h1 {
-    font-size: 3rem;
+	font-size: 3rem;
   }
   h2 {
-    font-size: 2rem;
+	font-size: 2rem;
   }
   ul {
-    list-style-type: none;
-    padding: 0;
+	list-style-type: none;
+	padding: 0;
   }
 
   li {
-    display: inline-block;
-    margin: 0 10px;
+	display: inline-block;
+	margin: 0 10px;
   }
 
   a {
-    color: #42b983;
+	color: #42b983;
   }
   .grid-header {
-    margin: 5rem 0;
+	margin: 5rem 0;
   }
 
   pre {
-    -webkit-overflow-scrolling: touch;
-    background-color: whitesmoke;
-    color: #4f559c;
-    white-space: pre;
-    font-size: 0.875rem;
-    padding: 1.5rem;
-    word-wrap: normal;
-    overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	background-color: whitesmoke;
+	color: #4f559c;
+	white-space: pre;
+	font-size: 0.875rem;
+	padding: 1.5rem;
+	word-wrap: normal;
+	overflow-x: auto;
   }
 
   pre code {
-    background-color: transparent;
-    .name-highlight {
-      color: #ff5598;
-    }
-    .div-highlight {
-      color: #41ad8f;
-    }
-    .class-highlight {
-      color: #6C1AEF;
-    }
+	background-color: transparent;
+	.name-highlight {
+	  color: #ff5598;
+	}
+	.div-highlight {
+	  color: #41ad8f;
+	}
+	.class-highlight {
+	  color: #6C1AEF;
+	}
   }
 
   .highlight {
-    font-weight: 400;
-    max-width: 100%;
-    overflow: hidden;
-    padding: 0;
-    border-radius: 4px;
-    pre {
-      overflow: auto;
-      max-width: 100%;
-    }
+	font-weight: 400;
+	max-width: 100%;
+	overflow: hidden;
+	padding: 0;
+	border-radius: 4px;
+	pre {
+	  overflow: auto;
+	  max-width: 100%;
+	}
   }
+
+.logo-img {
+  width: 200px;
+}
+
+.sub-header {
+  font-size: 1.5rem;
+}
+
+.site-header {
+	margin: 3rem 0;
+}

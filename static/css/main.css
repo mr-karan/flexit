@@ -285,4 +285,16 @@ pre code .class-highlight {
   max-width: 100%;
 }
 
-/*# sourceMappingURL=css/main.css.map */
+.logo-img {
+  width: 200px;
+}
+
+.sub-header {
+  font-size: 1.5rem;
+}
+
+.site-header {
+  margin: 3rem 0;
+}
+
+/*# sourceMappingURL=static/css/main.css.map */
