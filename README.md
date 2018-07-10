@@ -66,4 +66,4 @@ have 2 columns occupying 50% of the grid and one column occupying the remaining 
 
 Code copyright 2018 Karan Sharma. Code released under [the MIT license](https://github.com/mr-karan/flexit/blob/master/LICENSE).
 
-[npm-link]: https://www.npmjs.com/package/flexit
+[npm-link]: https://www.npmjs.com/package/flexitgrid
