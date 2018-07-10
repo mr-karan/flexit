@@ -172,6 +172,10 @@ email: karan.sharma@zerodha.com
   order: 1;
 }
 
+.vertical {
+  flex-flow: column wrap;
+}
+
 /*
 	##Device = Low Resolution Tablets, Mobiles (Landscape)
 	##Screen = B/w $breakpoint-tablet to $breakpoint-desktop
@@ -243,6 +247,42 @@ a {
 
 .grid-header {
   margin: 5rem 0;
+}
+
+pre {
+  -webkit-overflow-scrolling: touch;
+  background-color: whitesmoke;
+  color: #4f559c;
+  white-space: pre;
+  font-size: 0.875rem;
+  padding: 1.5rem;
+  word-wrap: normal;
+  overflow-x: auto;
+}
+
+pre code {
+  background-color: transparent;
+}
+pre code .sec-highlight {
+  color: #ff5598;
+}
+pre code .div-highlight {
+  color: #41ad8f;
+}
+pre code .class-highlight {
+  color: #8500ff;
+}
+
+.highlight {
+  font-weight: 400;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0;
+  border-radius: 4px;
+}
+.highlight pre {
+  overflow: auto;
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=css/main.css.map */

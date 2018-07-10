@@ -186,6 +186,10 @@ $breakpoint-desktop: 780px;
     order: 1;
 }
 
+.vertical {
+	flex-flow: column wrap;
+}
+
 /*
 	##Device = Low Resolution Tablets, Mobiles (Landscape)
 	##Screen = B/w $breakpoint-tablet to $breakpoint-desktop

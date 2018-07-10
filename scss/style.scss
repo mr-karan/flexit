@@ -41,3 +41,39 @@ body {
   .grid-header {
     margin: 5rem 0;
   }
+
+  pre {
+    -webkit-overflow-scrolling: touch;
+    background-color: whitesmoke;
+    color: #4f559c;
+    white-space: pre;
+    font-size: 0.875rem;
+    padding: 1.5rem;
+    word-wrap: normal;
+    overflow-x: auto;
+  }
+
+  pre code {
+    background-color: transparent;
+    .sec-highlight {
+      color: #ff5598;
+    }
+    .div-highlight {
+      color: #41ad8f;
+    }
+    .class-highlight {
+      color: #8500ff;
+    }
+  }
+
+  .highlight {
+    font-weight: 400;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0;
+    border-radius: 4px;
+    pre {
+      overflow: auto;
+      max-width: 100%;
+    }
+  }
