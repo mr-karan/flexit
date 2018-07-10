@@ -2,8 +2,8 @@
 
 Flexit is a **lightweight CSS Grid** based on [Flexbox](https://www.w3.org/TR/css-flexbox-1/#intro).
 
-[![npm](https://img.shields.io/npm/v/flexit.svg)][npm-link]
-[![npm](https://img.shields.io/npm/dm/flexit.svg)][npm-link]
+[![npm](https://img.shields.io/npm/v/flexitgrid.svg)][npm-link]
+[![npm](https://img.shields.io/npm/dm/flexitgrid.svg)][npm-link]
 
 <a href="https://mrkaran.com/flexit/"><img src="https://raw.githubusercontent.com/mr-karan/flexit/master/static/images/logo.png" alt="Flexit: Responsive CSS Grid" style="max-width:100%;" width="200"></a>
 
@@ -14,7 +14,7 @@ Flexit is in active development:
 ### NPM
 
 ```sh
-npm install flexit
+npm install flexitgrid
 ```
 
 **or**
@@ -22,7 +22,7 @@ npm install flexit
 ### Yarn
 
 ```sh
-yarn add flexit
+yarn add flexitgrid
 ```
 
 ### Import
