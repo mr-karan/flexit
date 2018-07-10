@@ -142,6 +142,7 @@ email: karan.sharma@zerodha.com
 
 .center {
   justify-content: center;
+  text-align: center;
 }
 
 .start {
@@ -174,10 +175,6 @@ email: karan.sharma@zerodha.com
 
 .vertical {
   flex-flow: column wrap;
-}
-
-.text-center {
-  text-align: center;
 }
 
 .row-align-center {
