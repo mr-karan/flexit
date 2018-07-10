@@ -212,6 +212,8 @@ body {
   -webkit-font-smoothing: antialiased;
   letter-spacing: 0.07rem;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/clean_textile.png");
+  background-attachment: fixed;
 }
 
 .box-column {
@@ -313,6 +315,14 @@ pre code .class-highlight {
 .box-first {
   background: #223967;
   border-color: #F4FAF0;
+}
+
+.features {
+  margin: 3rem 0;
+}
+
+main {
+  margin: 5rem 0;
 }
 
 /*# sourceMappingURL=static/css/main.css.map */
