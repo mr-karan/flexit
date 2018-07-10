@@ -263,14 +263,14 @@ pre {
 pre code {
   background-color: transparent;
 }
-pre code .sec-highlight {
+pre code .name-highlight {
   color: #ff5598;
 }
 pre code .div-highlight {
   color: #41ad8f;
 }
 pre code .class-highlight {
-  color: #8500ff;
+  color: #6C1AEF;
 }
 
 .highlight {
