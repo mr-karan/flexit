@@ -8,6 +8,7 @@
         <title>Flexit-Responsive CSS grid</title>
         <link href="https://fonts.googleapis.com/css?family=Dosis|Raleway" rel="stylesheet">
         <link rel="stylesheet" href="static/css/main.css">
+        <link rel="stylesheet" href="static/css/prism.css"/>
         <link rel='shortcut icon' type='image/x-icon' href='static/images/favicon.ico' />
     </head>
     <body>
@@ -25,18 +26,7 @@
                 <section class="features">
                     <h1>Get started in no time</h1>
                     <p>With simple and human readable class names, you can get up and running with Flexbit in no time</p>
-                    <!-- CODE EXAMPLE ———————————————————————————————————————— -->
-                    <figure class="highlight">
-                        <pre><code class="language-html" data-lang="html"><span class="div-highlight">&lt;section</span> <span class="div-highlight">class=</span><span class="name-highlight">"row"</span><span class="div-highlight">&gt;</span>
-      <span class="div-highlight">&lt;div</span> <span class="class-highlight">class=</span><span class="name-highlight">"one column"</span><span class="div-highlight">&gt;</span>
-        <span class="div-highlight">&lt;p</span><span class="div-highlight">&gt;</span>Section<span class="div-highlight">&lt;/p&gt;</span>
-      <span class="div-highlight">&lt;div</span> <span class="class-highlight">class=</span><span class="name-highlight">"five columns"</span><span class="div-highlight">&gt;</span>
-        <span class="div-highlight">&lt;p</span><span class="div-highlight">&gt;</span>Section<span class="div-highlight">&lt;/p&gt;</span>
-      <span class="div-highlight">&lt;div</span> <span class="class-highlight">class=</span><span class="name-highlight">"six columns"</span><span class="div-highlight">&gt;</span>
-        <span class="div-highlight">&lt;p</span><span class="div-highlight">&gt;</span>Section<span class="div-highlight">&lt;/p&gt;</span>
-      <span class="div-highlight">&lt;/div&gt;</span>
-<span class="div-highlight">&lt;/section&gt;</span></code></pre>
-                    </figure>
+
                     <section>
                         <div class="row">
                             <div class="one columns">
@@ -56,6 +46,16 @@
                             </div>
                         </div>
                     </section>
+                    <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+                    <pre><code class="language-html" data-lang="html"><span class="div-highlight">&lt;section</span> <span class="div-highlight">class=</span><span class="name-highlight">"row"</span><span class="div-highlight">&gt;</span>
+    <span class="div-highlight">&lt;div</span> <span class="class-highlight">class=</span><span class="name-highlight">"one column"</span><span class="div-highlight">&gt;</span>
+        <span class="div-highlight">&lt;p</span><span class="div-highlight">&gt;</span>Section<span class="div-highlight">&lt;/p&gt;</span>
+    <span class="div-highlight">&lt;div</span> <span class="class-highlight">class=</span><span class="name-highlight">"five columns"</span><span class="div-highlight">&gt;</span>
+        <span class="div-highlight">&lt;p</span><span class="div-highlight">&gt;</span>Section<span class="div-highlight">&lt;/p&gt;</span>
+    <span class="div-highlight">&lt;div</span> <span class="class-highlight">class=</span><span class="name-highlight">"six columns"</span><span class="div-highlight">&gt;</span>
+        <span class="div-highlight">&lt;p</span><span class="div-highlight">&gt;</span>Section<span class="div-highlight">&lt;/p&gt;</span>
+    <span class="div-highlight">&lt;/div&gt;</span>
+<span class="div-highlight">&lt;/section&gt;</span></code></pre>
                     <!-- ————————————————————————————————————————————————————— -->
                 </section>
                 <section class="features">
@@ -93,6 +93,25 @@
                             </div>
                         </div>
                     </section>
+    <pre>
+        <code class="language-html">
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;four columns&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;columns&quot;&gt;
+                &lt;div class=&quot;box-column&quot;&gt;
+                    &lt;p&gt;content&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;columns&quot;&gt;
+                &lt;div class=&quot;box-column&quot;&gt;
+                    &lt;p&gt;content&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+    </pre>
                 </section>
                 <section class="features">
                     <h1>Auto width Columns</h1>
@@ -123,6 +142,32 @@
                             </div>
                         </div>
                     </section>
+<pre>
+    <code class="language-html">
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;columns&quot;&gt;
+        &lt;div class=&quot;box-column&quot;&gt;
+            &lt;p&gt;auto&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;columns&quot;&gt;
+        &lt;div class=&quot;box-column&quot;&gt;
+            &lt;p&gt;auto&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;columns&quot;&gt;
+        &lt;div class=&quot;box-column&quot;&gt;
+            &lt;p&gt;auto&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;columns&quot;&gt;
+        &lt;div class=&quot;box-column&quot;&gt;
+            &lt;p&gt;auto&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+    </code>
+</pre>
                 </section>
                 <section class="features">
                         <h1>Offset</h1>
@@ -156,6 +201,22 @@
                                         </div>
                                 </div>
                         </div>
+<pre>
+    <code class="language-html">
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;three columns&quot;&gt;
+        &lt;div class=&quot;box-column&quot;&gt;
+            &lt;p&gt;three&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;column-offset-3 six columns&quot;&gt;
+        &lt;div class=&quot;box-column&quot;&gt;
+            &lt;p&gt;six + three offset&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+    </code>
+</pre>
                 </section>
                 <section class="features">
                     <h1>Flexbox Utilities</h1>
@@ -322,5 +383,7 @@
                 </section>
             </main>
         </section>
+
+        <script src="static/js/prism.js"></script>
     </body>
 </html>
