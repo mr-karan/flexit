@@ -1,11 +1,9 @@
 /* --------------------------------------------------------
-Zerodha Flex Grid System
+Flex Grid System
 
 version: 0.1
 author: Karan Sharma
 email: karan.sharma@zerodha.com
-----------------------------------------------------------*/
-/* Variables
 ----------------------------------------------------------*/
 /* Grid
 ----------------------------------------------------------*/
@@ -14,7 +12,6 @@ email: karan.sharma@zerodha.com
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  padding: 20px;
   box-sizing: border-box;
 }
 
@@ -25,114 +22,109 @@ email: karan.sharma@zerodha.com
   flex-flow: row wrap;
   margin: 0 10px;
 }
-.row.nogutter {
-  margin-left: 0;
-  margin-right: 0;
-}
-.row.nogutter > .columns {
-  padding-left: 0;
-  padding-right: 0;
-}
 
-.columns {
+.columns, .column {
   box-sizing: border-box;
-  flex: 0 1 auto;
-  padding: 0 10px;
+  text-align: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 1;
+  margin: 10px;
 }
 
 .one {
-  flex-basis: 8.33333333%;
+  max-width: calc(100% / 12);
 }
 
 .two {
-  flex-basis: 16.66666667%;
+  max-width: calc(100% / 12 * 2);
 }
 
 .three {
-  flex-basis: 25%;
+  max-width: calc(100% / 12 * 3);
 }
 
 .four {
-  flex-basis: 33.3333333333%;
+  max-width: calc(100% / 12 * 4);
 }
 
 .five {
-  flex-basis: 41.66666667%;
+  max-width: calc(100% / 12 * 5);
 }
 
 .six {
-  flex-basis: 50%;
+  max-width: calc(100% / 12 * 6);
 }
 
 .seven {
-  flex-basis: 58.33333333%;
+  max-width: calc(100% / 12 * 7);
 }
 
 .eight {
-  flex-basis: 66.66666667%;
+  max-width: calc(100% / 12 * 8);
 }
 
 .nine {
-  flex-basis: 75%;
+  max-width: calc(100% / 12 * 9);
 }
 
 .ten {
-  flex-basis: 83.33333333%;
+  max-width: calc(100% / 12 * 10);
 }
 
 .eleven {
-  flex-basis: 91.66666667%;
+  max-width: calc(100% / 12 * 11);
 }
 
 .twelve {
-  flex-basis: 100%;
+  max-width: 100%;
 }
 
-.col-offset-0 {
+.column-offset-0 {
   margin-left: 0;
 }
 
-.col-offset-1 {
+.column-offset-1 {
   margin-left: 8.33333333%;
 }
 
-.col-offset-2 {
+.column-offset-2 {
   margin-left: 16.66666667%;
 }
 
-.col-offset-3 {
+.column-offset-3 {
   margin-left: 25%;
 }
 
-.col-offset-4 {
+.column-offset-4 {
   margin-left: 33.33333333%;
 }
 
-.col-offset-5 {
+.column-offset-5 {
   margin-left: 41.66666667%;
 }
 
-.col-offset-6 {
+.column-offset-6 {
   margin-left: 50%;
 }
 
-.col-offset-7 {
+.column-offset-7 {
   margin-left: 58.33333333%;
 }
 
-.col-offset-8 {
+.column-offset-8 {
   margin-left: 66.66666667%;
 }
 
-.col-offset-9 {
+.column-offset-9 {
   margin-left: 75%;
 }
 
-.col-offset-10 {
+.column-offset-10 {
   margin-left: 83.33333333%;
 }
 
-.col-offset-11 {
+.column-offset-11 {
   margin-left: 91.66666667%;
 }
 
@@ -172,16 +164,42 @@ email: karan.sharma@zerodha.com
   margin-top: 10px;
 }
 
-/* Media Queries
-----------------------------------------------------------*/
-@media (min-width: 320px) and (max-width: 780px) {
-  .columns {
-    flex: 1 1 auto;
+.first {
+  order: -1;
+}
+
+.last {
+  order: 1;
+}
+
+/*
+	##Device = Low Resolution Tablets, Mobiles (Landscape)
+	##Screen = B/w $breakpoint-tablet to $breakpoint-desktop
+*/
+@media screen and (max-width: 768px) {
+  .container {
+    overflow: auto;
   }
 
-  .offset-0, .offset-1, .offset-2 {
+  .columns, .column {
+    min-width: 100%;
+    margin: 10px 0;
+  }
+
+  .column-offset-0,
+.column-offset-1,
+.column-offset-2,
+.column-offset-3,
+.column-offset-4,
+.column-offset-5,
+.column-offset-6,
+.column-offset-7,
+.column-offset-8,
+.column-offset-9,
+.column-offset-10,
+.column-offset-11 {
     margin: unset;
   }
 }
 
-/*# sourceMappingURL=dist/simple-grid.css.map */
+/*# sourceMappingURL=dist/flexit.css.map */
