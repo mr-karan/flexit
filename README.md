@@ -36,9 +36,12 @@ After installation, you can import the CSS file into your project using this sni
 import 'flexit/dist/flexit.css'
 ```
 
-### CDN
+### Manual Method
 
-[https://cdnjs.com/libraries/flexit](https://cdnjs.com/libraries/flexit)
+You can download the CSS file from [here](https://github.com/mr-karan/flexit/blob/master/dist/flexit.css) and use it in your HTML as
+```html
+<link rel="stylesheet" href="flexbit.css">
+```
 
 
 ## Clean Syntax

@@ -11,7 +11,7 @@ body {
     // background-attachment: fixed;
   }
 
-  .box-column {
+.box-column {
 	min-height: 3rem;
 	background: #1238AB;
 	border: 1px solid #FFF;
@@ -20,9 +20,10 @@ body {
 	color: white;
 	p {
 		font-size: 0.875rem;
-		padding: 10px;
+		padding: 10px 5px;
+		word-break: break-all;
 	}
-  }
+}
   h1,h2,h3,.sub-header {
 	font-family: 'Dosis', sans-serif;
 	letter-spacing: 0.07rem;
@@ -104,7 +105,8 @@ body {
 
 .box-first {
     background: #223967;
-    border-color: #F4FAF0;
+	border-color: #F4FAF0;
+	padding: 10px;
 }
 
 .features {
@@ -116,5 +118,6 @@ main {
 }
 
 .row-bg {
-	background-color: #223967;
+	padding: 10px;
+	background: #223967;
 }

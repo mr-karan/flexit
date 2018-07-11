@@ -17,6 +17,7 @@ $breakpoint-desktop: 780px;
 	width: 100%;
 	max-width: 960px;
 	margin: 0 auto;
+	padding: 0 $gutter;
 	box-sizing: border-box;
 }
 
@@ -25,66 +26,71 @@ $breakpoint-desktop: 780px;
 	display:flex;
 	flex: 0 1 auto;
 	flex-flow: row wrap;
-	margin: 0 $gutter;
+	// margin: 0 $gutter;
 }
 
 // Columns
 
 .columns, .column {
     box-sizing: border-box;
-	text-align: center;
 	flex-grow: 1;
 	flex-shrink: 1;
 	flex-basis: 1;
-	margin: $gutter;
+	margin: $gutter 0 $gutter 4%;
+}
+
+.column:first-child,
+.columns:first-child {
+	margin-left: 0;
 }
 
 .one {
-	max-width: calc(100% / 12);
+	max-width: 4.66666666667%;
 }
 
 .two {
-	max-width: calc(100% / 12 * 2);
+	max-width: 13.3333333333%;
 }
 
 .three {
-	max-width: calc(100% / 12 * 3);
+	max-width: 22%;
 }
 
 .four {
-	max-width: calc(100% / 12 * 4);
+	max-width: 30.6666666667%;
 }
 
 .five {
-	max-width: calc(100% / 12 * 5);
+	max-width: 39.3333333333%;
 }
 
 .six {
-	max-width: calc(100% / 12 * 6);
+	max-width: 48%;
 }
 
 .seven {
-	max-width: calc(100% / 12 * 7);
+	max-width: 56.6666666667%;
 }
 
 .eight {
-	max-width: calc(100% / 12 * 8);
+	max-width: 65.3333333333%;
 }
 
 .nine {
-	max-width: calc(100% / 12 * 9);
+	max-width: 74.0%;;
 }
 
 .ten {
-	max-width: calc(100% / 12 * 10);
+	max-width: 82.6666666667%;
 }
 
 .eleven {
-	max-width: calc(100% / 12 * 11);
+	max-width: 91.3333333333%;
 }
 
 .twelve {
 	max-width: 100%;
+	margin-left: 0;
 }
 
 // Offsets

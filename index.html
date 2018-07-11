@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Dosis|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="static/css/main.css">
     <link rel="stylesheet" href="static/css/prism.css" />
-    <link rel='shortcut icon' type='image/x-icon' href='static/images/favicon.ico' />
+    <link rel='shortcut icon' type='image/x-icon' href='../static/images/favicon.ico' />
 </head>
 
 <body>
@@ -19,9 +19,11 @@
             <div class="four columns">
                 <img class="logo-img" src="static/images/logo.png" />
             </div>
-            <div class="six columns">
+            <div class="eight columns center">
                 <h1>Flexit</h1>
                 <p class="sub-header">Simple, clean and no fuss flexbox based grid.</p>
+                <!-- Place this tag where you want the button to render. -->
+                <a class="github-button" href="https://github.com/mr-karan/flexit" data-icon="octicon-star" aria-label="Visit Flexit on GitHub">GitHub</a>
             </div>
             <!-- <div class="twelve columns">
                     <h1>Flexit</h1>
@@ -35,12 +37,12 @@
 
                 <section>
                     <div class="row">
-                        <div class="one columns">
+                        <div class="two columns">
                             <div class="box-column">
                                 <p>content</p>
                             </div>
                         </div>
-                        <div class="five columns">
+                        <div class="four columns">
                             <div class="box-column">
                                 <p>content</p>
                             </div>
@@ -53,17 +55,55 @@
                     </div>
                 </section>
                 <!-- CODE EXAMPLE ———————————————————————————————————————— -->
-                <pre><code class="language-html" data-lang="html"><span class="div-highlight">&lt;section</span> <span class="div-highlight">class=</span><span class="name-highlight">"row"</span><span class="div-highlight">&gt;</span>
-    <span class="div-highlight">&lt;div</span> <span class="class-highlight">class=</span><span class="name-highlight">"one column"</span><span class="div-highlight">&gt;</span>
-        <span class="div-highlight">&lt;p</span><span class="div-highlight">&gt;</span>Section<span class="div-highlight">&lt;/p&gt;</span>
-    <span class="div-highlight">&lt;div</span> <span class="class-highlight">class=</span><span class="name-highlight">"five columns"</span><span class="div-highlight">&gt;</span>
-        <span class="div-highlight">&lt;p</span><span class="div-highlight">&gt;</span>Section<span class="div-highlight">&lt;/p&gt;</span>
-    <span class="div-highlight">&lt;div</span> <span class="class-highlight">class=</span><span class="name-highlight">"six columns"</span><span class="div-highlight">&gt;</span>
-        <span class="div-highlight">&lt;p</span><span class="div-highlight">&gt;</span>Section<span class="div-highlight">&lt;/p&gt;</span>
-    <span class="div-highlight">&lt;/div&gt;</span>
-<span class="div-highlight">&lt;/section&gt;</span></code></pre>
+                <pre><code class="language-html" data-lang="html">
+&lt;div class=&quot;container&quot;&gt;
+    &lt;section class=&quot;row&quot;&gt;
+        &lt;div class=&quot;one column&quot;&gt;
+            &lt;p&gt;Section&lt;/p&gt;
+        &lt;div class=&quot;five columns&quot;&gt;
+            &lt;p&gt;Section&lt;/p&gt;
+        &lt;div class=&quot;six columns&quot;&gt;
+            &lt;p&gt;Section&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+&lt;/div&gt;
+                </code></pre>
                 <!-- ————————————————————————————————————————————————————— -->
             </section>
+            <section class="features">
+                    <h1>The Container</h1>
+                    <p>Flexit container has a <code>max-width</code> of 960px and it shrinks relatively with the screen size. The container has a <code>padding</code> of <code>0px 20px</code> so it doesn't touch the edges on smaller screens.</p>
+
+                    <section>
+                            <div class="row">
+                                <div class="six columns">
+                                    <div class="box-column">
+                                        <p>content</p>
+                                    </div>
+                                </div>
+                                <div class="six columns">
+                                    <div class="box-column">
+                                        <p>content</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+                    <pre><code class="language-html" data-lang="html">
+&lt;section&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;six columns&quot;&gt;
+                &lt;p&gt;content&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;six columns&quot;&gt;
+                    &lt;p&gt;content&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+                    </code></pre>
+                    <!-- ————————————————————————————————————————————————————— -->
             <section class="features">
                     <h1>The Grid</h1>
                     <div class="row">
@@ -167,17 +207,19 @@
                 </section>
                 <pre>
         <code class="language-html">
-&lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;four columns&quot;&gt;
-        &lt;div class=&quot;row&quot;&gt;
-            &lt;div class=&quot;columns&quot;&gt;
-                &lt;div class=&quot;box-column&quot;&gt;
-                    &lt;p&gt;content&lt;/p&gt;
+&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;four columns&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;columns&quot;&gt;
+                    &lt;div class=&quot;box-column&quot;&gt;
+                        &lt;p&gt;content&lt;/p&gt;
+                    &lt;/div&gt;
                 &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;columns&quot;&gt;
-                &lt;div class=&quot;box-column&quot;&gt;
-                    &lt;p&gt;content&lt;/p&gt;
+                &lt;div class=&quot;columns&quot;&gt;
+                    &lt;div class=&quot;box-column&quot;&gt;
+                        &lt;p&gt;content&lt;/p&gt;
+                    &lt;/div&gt;
                 &lt;/div&gt;
             &lt;/div&gt;
         &lt;/div&gt;
@@ -191,22 +233,22 @@
                 </p>
                 <section>
                     <div class="row">
-                        <div class="columns">
+                        <div class="column">
                             <div class="box-column">
                                 <p>auto</p>
                             </div>
                         </div>
-                        <div class="columns">
+                        <div class="column">
                             <div class="box-column">
                                 <p>auto</p>
                             </div>
                         </div>
-                        <div class="columns">
+                        <div class="column">
                             <div class="box-column">
                                 <p>auto</p>
                             </div>
                         </div>
-                        <div class="columns">
+                        <div class="column">
                             <div class="box-column">
                                 <p>auto</p>
                             </div>
@@ -216,22 +258,22 @@
                 <pre>
     <code class="language-html">
 &lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;columns&quot;&gt;
+    &lt;div class=&quot;column&quot;&gt;
         &lt;div class=&quot;box-column&quot;&gt;
             &lt;p&gt;auto&lt;/p&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;columns&quot;&gt;
+    &lt;div class=&quot;column&quot;&gt;
         &lt;div class=&quot;box-column&quot;&gt;
             &lt;p&gt;auto&lt;/p&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;columns&quot;&gt;
+    &lt;div class=&quot;column&quot;&gt;
         &lt;div class=&quot;box-column&quot;&gt;
             &lt;p&gt;auto&lt;/p&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;columns&quot;&gt;
+    &lt;div class=&quot;column&quot;&gt;
         &lt;div class=&quot;box-column&quot;&gt;
             &lt;p&gt;auto&lt;/p&gt;
         &lt;/div&gt;
@@ -460,7 +502,8 @@
         }
     </style>
     <!-- Github Ribbon End-->
-
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
     <script src="static/js/prism.js"></script>
 </body>
 
