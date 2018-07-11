@@ -13,11 +13,11 @@ body {
 
 .box-column {
 	min-height: 3rem;
-	background: #1238AB;
-	border: 1px solid #FFF;
+	background: white;
+	border: 1px solid #1238AB;
 	border-radius: 2px;
 	text-align: center;
-	color: white;
+	color: #1238AB;
 	p {
 		font-size: 0.875rem;
 		padding: 10px 5px;
@@ -104,7 +104,7 @@ body {
 }
 
 .box-first {
-    background: #223967;
+  background: #223967;
 	border-color: #F4FAF0;
 	padding: 10px;
 }
