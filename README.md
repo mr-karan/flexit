@@ -1,5 +1,5 @@
 # [Flexit](https://mrkaran.com/flexit/)
-![Logo](static/images/logo.png | width=200 "Flexit")
+![Logo](static/images/logo.png | width=200)
 
 Flexit is a **lightweight CSS Grid** based on [Flexbox](https://www.w3.org/TR/css-flexbox-1/#intro).
 
