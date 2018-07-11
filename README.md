@@ -40,7 +40,7 @@ import 'flexit/dist/flexit.css'
 
 You can download the CSS file from [here](https://github.com/mr-karan/flexit/blob/master/dist/flexit.css) and use it in your HTML as
 ```html
-<link rel="stylesheet" href="flexbit.css">
+<link rel="stylesheet" href="flexit.css">
 ```
 
 
