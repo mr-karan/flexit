@@ -33,7 +33,7 @@ yarn add flexitgrid
 After installation, you can import the CSS file into your project using this snippet:
 
 ```sh
-import 'flexit/dist/flexit.css'
+import 'flexitgrid/dist/flexit.css'
 ```
 
 ### Manual Method
