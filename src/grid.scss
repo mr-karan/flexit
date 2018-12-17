@@ -1,7 +1,7 @@
 /* --------------------------------------------------------
 Flex Grid System
 
-version: 0.1
+version: 0.2
 author: Karan Sharma
 email: karan.sharma@zerodha.com
 ----------------------------------------------------------*/
@@ -13,128 +13,128 @@ $breakpoint-desktop: 780px;
 
 /* Grid
 ----------------------------------------------------------*/
+
 .container {
 	position: relative;
 	width: 100%;
-	max-width: 960px;
+	max-width: 1200px;
 	margin: 0 auto;
+	padding: $gutter*2;
 	box-sizing: border-box;
 }
 
 .row {
     box-sizing: border-box;
-	display:flex;
+	display: flex;
 	flex: 0 1 auto;
 	flex-flow: row wrap;
-	margin: 0 $gutter;
+    // margin: 0 $gutter;
+    &.nogutter {
+		margin-left: 0;
+		margin-right: 0;
+        & > .columns {
+			padding: 0;
+        }
+    }
 }
 
 // Columns
 
-.columns, .column {
+.columns {
     box-sizing: border-box;
-	text-align: center;
-	flex-grow: 1;
-	flex-shrink: 1;
-	flex-basis: 1;
-	margin: $gutter;
+	flex: 0 1 auto;
+	margin: $gutter $gutter $gutter 0;
+}
+.column:first-child,
+.columns:first-child {
+	margin-left: 0;
 }
 
-.one {
-	max-width: calc(100% / 12);
+.one{
+	flex-basis: 4.66666666667%;
 }
-
 .two {
-	max-width: calc(100% / 12 * 2);
+	flex-basis: 13.3333333333%;
 }
-
 .three {
-	max-width: calc(100% / 12 * 3);
+	flex-basis: 22%;
 }
-
 .four {
-	max-width: calc(100% / 12 * 4);
+	flex-basis: 30.6666666667%;
 }
-
 .five {
-	max-width: calc(100% / 12 * 5);
+	flex-basis: 39.3333333333%;
 }
-
 .six {
-	max-width: calc(100% / 12 * 6);
+	flex-basis: 48%;
 }
-
 .seven {
-	max-width: calc(100% / 12 * 7);
+	flex-basis: 56.6666666667%;
 }
-
 .eight {
-	max-width: calc(100% / 12 * 8);
+	flex-basis: 65.3333333333%;
 }
-
 .nine {
-	max-width: calc(100% / 12 * 9);
+	flex-basis: 74.0%;;
 }
-
 .ten {
-	max-width: calc(100% / 12 * 10);
+	flex-basis: 82.6666666667%;
 }
-
 .eleven {
-	max-width: calc(100% / 12 * 11);
+	flex-basis: 91.3333333333%;
 }
-
 .twelve {
-	max-width: 100%;
+	flex-basis: 100%;
+	margin-left: 0;
 }
 
 // Offsets
 
-.column-offset-0 {
+.col-offset-0 {
 	margin-left: 0;
 }
 
-.column-offset-1 {
+.col-offset-1 {
 	margin-left: 8.33333333%;
 }
 
-.column-offset-2 {
+.col-offset-2 {
 	margin-left: 16.66666667%;
 }
 
-.column-offset-3 {
+.col-offset-3 {
 	margin-left: 25%;
 }
 
-.column-offset-4 {
+.col-offset-4 {
 	margin-left: 33.33333333%;
 }
 
-.column-offset-5 {
+.col-offset-5 {
 	margin-left: 41.66666667%;
 }
 
-.column-offset-6 {
+.col-offset-6 {
 	margin-left: 50%;
 }
 
-.column-offset-7 {
+.col-offset-7 {
 	margin-left: 58.33333333%;
 }
 
-.column-offset-8 {
+.col-offset-8 {
 	margin-left: 66.66666667%;
 }
 
-.column-offset-9 {
+.col-offset-9 {
 	margin-left: 75%;
 }
 
-.column-offset-10 {
+.col-offset-10 {
 	margin-left: 83.33333333%;
 }
 
-.column-offset-11 {
+.col-offset-11 {
 	margin-left: 91.66666667%;
 }
 
@@ -150,6 +150,10 @@ $breakpoint-desktop: 780px;
 	justify-content: flex-end;
 }
 
+.even {
+	justify-content: space-evenly;
+}
+
 .around {
 	justify-content: space-around;
 }
@@ -163,19 +167,19 @@ $breakpoint-desktop: 780px;
 }
 
 .space-right {
-	margin-right: $gutter;
+    margin-right: $gutter;
 }
 
 .space-left {
-	margin-left: $gutter;
+    margin-left: $gutter;
 }
 
 .space-bottom {
-	margin-bottom: $gutter;
+    margin-bottom: $gutter;
 }
 
 .space-top {
-	margin-top: $gutter;
+    margin-top: $gutter;
 }
 
 /*
@@ -183,27 +187,12 @@ $breakpoint-desktop: 780px;
 	##Screen = B/w $breakpoint-tablet to $breakpoint-desktop
 */
 
-@media screen and (max-width: 768px) {
-	.container {
-		overflow: auto;
+@media (min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+	.columns {
+		flex: 1 1 auto;
 	}
-	.columns, .column {
-		min-width: 100%;
-		margin: $gutter 0;
-	}
-	.column-offset-0,
-	.column-offset-1,
-	.column-offset-2,
-	.column-offset-3,
-	.column-offset-4,
-	.column-offset-5,
-	.column-offset-6,
-	.column-offset-7,
-	.column-offset-8,
-	.column-offset-9,
-	.column-offset-10,
-	.column-offset-11,
-	{
+	.col-offset-0, .col-offset-1, .col-offset-2, .col-offset-3 {
 		margin: unset;
 	}
 }
+
