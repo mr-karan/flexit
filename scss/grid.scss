@@ -1,8 +1,9 @@
 /* --------------------------------------------------------
 Flex Grid System
 
-version: 0.03
+version: 0.06
 author: Karan Sharma
+email: karan.sharma@zerodha.com
 ----------------------------------------------------------*/
 
 $gutter: 10px;
@@ -12,134 +13,123 @@ $breakpoint-desktop: 780px;
 
 /* Grid
 ----------------------------------------------------------*/
+
 .container {
 	position: relative;
 	width: 100%;
 	max-width: 960px;
 	margin: 0 auto;
-	padding: 0 $gutter;
+	padding: $gutter * 2;
 	box-sizing: border-box;
 }
 
 .row {
     box-sizing: border-box;
-	display:flex;
+	display: flex;
 	flex: 0 1 auto;
 	flex-flow: row wrap;
-	// margin: 0 $gutter;
+    margin: 0 $gutter;
+    &.nogutter {
+		margin-left: 0;
+		margin-right: 0;
+        & > .columns {
+			padding-left: 0;
+			padding-right: 0;
+        }
+    }
 }
 
 // Columns
 
-.columns, .column {
+.columns {
     box-sizing: border-box;
-	flex-grow: 1;
-	flex-shrink: 1;
-	flex-basis: 1;
-	margin: $gutter 0 $gutter 4%;
+	flex: 0 1 auto;
+	padding: 0 $gutter;
 }
-
-.column:first-child,
-.columns:first-child {
-	margin-left: 0;
+.one{
+	flex-basis: 8.33333333%;
 }
-
-.one {
-	max-width: 4.66666666667%;
-}
-
 .two {
-	max-width: 13.3333333333%;
+	flex-basis: 16.66666667%;
 }
-
 .three {
-	max-width: 22%;
+	flex-basis: 25%;
 }
-
 .four {
-	max-width: 30.6666666667%;
+	flex-basis: 33.3333333333%;
 }
-
 .five {
-	max-width: 39.3333333333%;
+	flex-basis: 41.66666667%;
 }
-
 .six {
-	max-width: 48%;
+	flex-basis: 50%;
 }
-
 .seven {
-	max-width: 56.6666666667%;
+	flex-basis: 58.33333333%;
 }
-
 .eight {
-	max-width: 65.3333333333%;
+	flex-basis: 66.66666667%;
 }
-
 .nine {
-	max-width: 74.0%;;
+	flex-basis: 75%;
 }
-
 .ten {
-	max-width: 82.6666666667%;
+	flex-basis: 83.33333333%;
 }
-
 .eleven {
-	max-width: 91.3333333333%;
+	flex-basis: 91.66666667%;
 }
-
 .twelve {
-	max-width: 100%;
-	margin-left: 0;
+	flex-basis: 100%;
 }
 
 // Offsets
 
-.column-offset-0 {
+.col-offset-0 {
 	margin-left: 0;
 }
 
-.column-offset-1 {
+.col-offset-1 {
 	margin-left: 8.33333333%;
 }
 
-.column-offset-2 {
+.col-offset-2 {
 	margin-left: 16.66666667%;
 }
 
-.column-offset-3 {
+.col-offset-3 {
 	margin-left: 25%;
 }
 
-.column-offset-4 {
+.col-offset-4 {
 	margin-left: 33.33333333%;
 }
 
-.column-offset-5 {
+.col-offset-5 {
 	margin-left: 41.66666667%;
 }
 
-.column-offset-6 {
+.col-offset-6 {
 	margin-left: 50%;
 }
 
-.column-offset-7 {
+.col-offset-7 {
 	margin-left: 58.33333333%;
 }
 
-.column-offset-8 {
+.col-offset-8 {
 	margin-left: 66.66666667%;
 }
 
-.column-offset-9 {
+.col-offset-9 {
 	margin-left: 75%;
 }
 
-.column-offset-10 {
+.col-offset-10 {
 	margin-left: 83.33333333%;
 }
 
-.column-offset-11 {
+.col-offset-11 {
 	margin-left: 91.66666667%;
 }
 
@@ -151,49 +141,12 @@ $breakpoint-desktop: 780px;
 	justify-content: space-between;
 }
 
-.evenly {
-	justify-content: space-evenly;
-}
-
-.around {
-	justify-content: space-around;
-}
-
-.center {
-	justify-content: center;
-	text-align: center;
-}
-
-.start {
-	justify-content: flex-start;
-}
-
 .end {
 	justify-content: flex-end;
 }
 
-.top {
-	align-items: flex-start;
-}
-
-.bottom {
-	align-items: flex-end;
-}
-
-.middle {
-	align-items: center;
-}
-
-.first {
-    order: -1;
-}
-
-.last {
-    order: 1;
-}
-
-.vertical {
-	flex-flow: column wrap;
+.around {
+	justify-content: space-around;
 }
 
 .row-align-center {
@@ -201,49 +154,47 @@ $breakpoint-desktop: 780px;
 }
 
 .space-right {
-	margin-right: $gutter;
+    margin-right: $gutter;
 }
 
 .space-left {
-	margin-left: $gutter;
+    margin-left: $gutter;
 }
 
 .space-bottom {
-	margin-bottom: $gutter;
+    margin-bottom: $gutter;
 }
 
 .space-top {
-	margin-top: $gutter;
+    margin-top: $gutter;
 }
-
-
 
 /*
 	##Device = Low Resolution Tablets, Mobiles (Landscape)
 	##Screen = B/w $breakpoint-tablet to $breakpoint-desktop
 */
 
-@media screen and (max-width: 768px) {
-	.container {
-		overflow: auto;
+@media (min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+	.columns {
+		flex: 1 1 auto;
 	}
-	.columns, .column {
-		min-width: 100%;
-		margin: $gutter 0;
-	}
-	.column-offset-0,
-	.column-offset-1,
-	.column-offset-2,
-	.column-offset-3,
-	.column-offset-4,
-	.column-offset-5,
-	.column-offset-6,
-	.column-offset-7,
-	.column-offset-8,
-	.column-offset-9,
-	.column-offset-10,
-	.column-offset-11,
-	{
+	.offset-0, .offset-1, .offset-2 {
 		margin: unset;
 	}
+
 }
+
+/*
+	##Device = Most of the Smartphones Mobiles (Portrait)
+	##Screen = B/w $breakpoint-mobile to $breakpoint-tablet-1px
+*/
+
+// @media (min-width: $breakpoint-mobile) and (max-width: calc($breakpoint-tablet-1px)) {
+
+// 	.columns {
+// 		box-sizing: border-box;
+// 		flex: 0 0 auto;
+// 	}
+
+// }
+
