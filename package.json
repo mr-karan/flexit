@@ -1,6 +1,6 @@
 {
   "name": "flexitgrid",
-  "version": "1.0.0",
+  "version": "1.1.0-0",
   "description": "Responsive Flexbox CSS Grid",
   "style": "dist/flexit.css",
   "main": "dist/flexit.css",
