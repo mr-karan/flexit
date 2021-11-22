@@ -8,7 +8,7 @@ Flexit is a **lightweight CSS Grid** based on [Flexbox](https://www.w3.org/TR/cs
 
 ## Demo
 
-[Visit](https://mrkaran.com/flexit/) the demo page built entirely using Flexit.
+[Visit](https://mr-karan.github.io/flexit/) the demo page built entirely using Flexit.
 
 
 ## Quick install
